@@ -1,0 +1,16 @@
+package com.java.genericsandcollection;
+
+public class compareto {
+	
+
+}
+
+class DvdInfo implements Comparable<DVD>{
+	String title ;
+	String leadActor;
+    
+	DvdInfo(String title, String leadActor){
+		
+	}
+	
+}

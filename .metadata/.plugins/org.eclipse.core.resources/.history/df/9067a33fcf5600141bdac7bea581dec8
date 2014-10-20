@@ -1,0 +1,26 @@
+package com.java.threads;
+
+public class JoinerTest {
+	public static void main(String[] args) {
+		JoinThreadA jta = new JoinThreadA();
+		Thread ta = new Thread(jta);
+		Thread tb = new Thread(jta);
+		ta.setName("ThreadA");
+		ta.start();
+
+		tb.setName("ThreadB");
+		tb.start();
+
+	}
+}
+
+class JoinThreadA implements Runnable {
+
+	public void run() {
+            for (int i = 0; i <100; i++) {
+            	System.out.println(" Thread : " + Thread.currentThread().getName() + " is running for  iteration : " +i);
+            	if( Thread.currentThread().getName().equals(anObject))
+				
+			}
+	}
+}

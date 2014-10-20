@@ -1,0 +1,26 @@
+package com.java.innerclass;
+
+import com.java.innerclass.MyOuter.MyInner;
+
+public class InnerClassCreate {
+	public static void main(String[] args) {
+		MyOuter my = new MyOuter();
+		MyOuter.MyInner 	inner = my.new MyInner();
+		inner.seeOuter();
+	}
+
+}
+
+class MyOuter{
+	private int x=7;
+	public void makeInner(){
+		MyInner in = new MyInner();
+		in.seeOuter();
+	}
+	
+	class MyInner{
+		public void seeOuter(){
+			System.out.println(x);
+		}
+	}
+}

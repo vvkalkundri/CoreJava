@@ -1,0 +1,23 @@
+package com.java.threads;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+//We use to see this that the collection class that is synchronised is thread safe.
+
+public class ThreadSafeClass {
+	private List<String> names = Collections
+			.synchronizedList(new LinkedList<String>());
+
+	public void add(String name) {
+		names.add(name);
+	}
+
+	public String removeEle(){
+    	 if(names.size() > 0)
+    		  names.remove(0));
+    		  else
+		return null;
+     }
+}

@@ -1,0 +1,38 @@
+package com.java.threads;
+
+public class TestNotify {
+	public static void main(String[] args) {
+		ThreadB tb = new ThreadB();
+		Thread t1 = new Thread(tb);
+		t1.start();
+
+		synchronized (t1) {
+			try {
+				System.out.println("Waiting for B to Complete .....");
+				t1.wait();
+			} catch (InterruptedException ie) {
+				System.out.println("The total value is :: " + tb.total);
+			}
+		}
+	}
+
+}
+
+class ThreadB implements Runnable {
+	int total;
+
+	public void run() {
+		synchronized (this) {
+			for (int i = 0; i < 100; i++) {
+				total += i;
+//				try {
+//					Thread.sleep(250);
+//					System.out.println("I is iterating at  : " + i);
+//				} catch (InterruptedException e) {
+//					System.out.println("Thread is interrupted");
+//				}
+			}notify();
+			
+		}
+	}
+}

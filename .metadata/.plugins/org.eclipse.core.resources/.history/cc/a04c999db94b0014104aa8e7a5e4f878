@@ -1,0 +1,22 @@
+package com.java.genericsandcollection;
+
+import java.awt.List;
+
+class Dog {
+	public String name;
+
+	Dog(String n) {
+		name = n;
+	}
+
+}
+
+
+public class ListIterator {
+	public static void main(String[] args) {
+		List<Dog> d1 = new ArrayList<Dog>();
+		
+	}
+
+}
+

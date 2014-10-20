@@ -1,0 +1,33 @@
+package com.java.threads;
+
+public class JoinerTest {
+	public static void main(String[] args) {
+		JoinThreadA jta = new JoinThreadA();
+		Thread ta = new Thread(jta);
+		Thread tb = new Thread(jta);
+		ta.setName("ThreadA");
+		ta.start();
+		try {
+			ta.join(100);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		tb.setName("ThreadB");
+		tb.start();
+
+	}
+}
+
+class JoinThreadA implements Runnable {
+
+	public void run() {
+		System.out.println(" The Thread that is running is : "
+				+ Thread.currentThread().getName());
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+	}
+}

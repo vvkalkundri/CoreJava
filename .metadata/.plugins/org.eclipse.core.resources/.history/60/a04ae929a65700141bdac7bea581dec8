@@ -1,0 +1,20 @@
+package com.java.test;
+
+import java.util.Scanner;
+
+class Salman {
+	public static void main(String[] args) {
+
+		Scanner scannerInput = new Scanner(System.in);
+		String testString = scannerInput.next();
+		String reversedString = new StringBuffer(testString).reverse()
+				.toString();
+		if (reversedString.equals(testString)) {
+			System.out.println("It is a palindrome");
+		} else {
+			System.out.println("It is not a palindrome");
+		}
+
+	}
+
+}

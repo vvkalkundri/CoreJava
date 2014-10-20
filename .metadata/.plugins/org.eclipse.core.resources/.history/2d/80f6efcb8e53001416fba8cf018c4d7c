@@ -1,0 +1,13 @@
+package com.java.threads;
+
+public class SimpleJoin {
+
+}
+
+class JoinTest implements Runnable {
+
+	public void run() {
+
+	}
+
+}

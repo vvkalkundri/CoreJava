@@ -1,0 +1,14 @@
+package com.java.threads;
+
+public class TestNotify {
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class ThreadB implements Runnable {
+	public void run() {
+
+	}
+}

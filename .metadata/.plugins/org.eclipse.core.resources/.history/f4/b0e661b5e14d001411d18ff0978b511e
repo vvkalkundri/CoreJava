@@ -1,0 +1,14 @@
+package com.java.genericsandcollection;
+
+import java.util.ArrayList;
+
+public class AnimalDoctorGeneric {
+	public void checkAnimals(ArrayList<Animal> animals) {
+
+	}
+
+}
+
+abstract class Animal{
+	public void checkUp();
+}

@@ -1,0 +1,7 @@
+package com.java.genericsandcollection;
+
+public class MapTest {
+	public static void main(String[] args) {
+
+	}
+}

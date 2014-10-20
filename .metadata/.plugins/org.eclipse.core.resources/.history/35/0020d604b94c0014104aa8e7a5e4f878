@@ -1,0 +1,10 @@
+package com.java.genericsandcollection;
+
+import java.util.TreeSet;
+
+public class TreeTest {
+	public static void main(String[] args) {
+		TreeTest<Integer> ts = new TreeTes<Integer>t();
+		
+	}
+}

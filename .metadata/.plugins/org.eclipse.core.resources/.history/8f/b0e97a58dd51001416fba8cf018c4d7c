@@ -1,0 +1,7 @@
+package com.java.innerclass;
+
+public class InterfaceAndInnerClass {
+	public static void main(String[] args) {
+
+	}
+}

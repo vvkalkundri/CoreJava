@@ -1,0 +1,36 @@
+package com.java.genericsandcollection;
+
+import java.util.ArrayList;
+
+public class AnimalDoctorGeneric {
+	public void checkAnimals(ArrayList<Animal> animals) {
+        for (Animal animal : animals) {
+			animal.checkUp();
+		}
+	}
+
+}
+
+
+
+abstract class Animal {
+	public abstract void checkUp();
+}
+
+class DogAnimalCheckup extends Animal {
+	public void checkUp() {
+		System.out.println("Dog check up ");
+	}
+}
+
+class CatAnimalCheckup extends Animal {
+	public void checkUp() {
+		System.out.println("Cat Check up");
+	}
+}
+
+class BirdAnimalCheckUp extends Animal {
+	public void checkUp() {
+		System.out.println("Bird checkup");
+	}
+}

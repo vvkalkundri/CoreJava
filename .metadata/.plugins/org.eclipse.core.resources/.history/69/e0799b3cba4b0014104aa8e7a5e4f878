@@ -1,0 +1,29 @@
+package com.java.genericsandcollection;
+
+import java.util.*;
+
+class Dog {
+	String name;
+
+	Dog(String n) {
+		name = n;
+	}
+
+}
+
+
+ class ListIterator {
+	public static void main(String[] args) {
+		List<Dog> d1 = new ArrayList<Dog>();
+		Dog dg = new Dog("browny");
+		d1.add(new Dog("tommy"));
+		d1.add(new Dog("Pinky"));
+		d1.add(dg);
+		
+		Iterator<Dog> i1 = d1.iterator();
+		while(i1.hasNext())
+			System.out.println(i1.next());
+	}
+
+}
+

@@ -1,0 +1,17 @@
+package com.java.genericsandcollection;
+
+import java.util.Arrays;
+
+public class CollectionBinarySearch {
+	public static void main(String[] args) {
+		String[] sa = { "one", "two", "three", "four" };
+		for (String string : sa)
+			System.out.print(string + " ");
+		
+		
+		Arrays.sort(sa);
+		
+		for (String string : sa)
+			System.out.print(string + " ");
+	}
+}

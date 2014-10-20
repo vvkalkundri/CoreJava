@@ -1,0 +1,16 @@
+package com.java.test;
+
+public class funnyProduct {
+
+	public static void main(String[] args) {
+		int size = 4;
+		int arr[] = {1,2,3,4};
+	 funnyProduct(arr, size);
+	}
+	static int[]  funnyProduct ( int arr[], int size){
+		int[] temp = new int[size];
+		
+		return temp;
+		
+	}
+}

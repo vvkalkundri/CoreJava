@@ -1,0 +1,29 @@
+package com.java.threads;
+
+public class SimpleThread {
+	public static void main(String[] args) {
+		MyRunnable mr = new MyRunnable();
+		Thread t1 = new Thread(mr);
+		Thread t2 = new Thread(mr);
+		Thread t3 = new Thread(mr);
+
+		t1.run();
+		t2.run();
+		t3.run();
+
+	}
+}
+
+class MyRunnable implements Runnable {
+
+	@Override
+	public void run(String name) {
+		System.out.println("The thread is running in MyRunnable : " +name);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.java.genericsandcollection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class DogAnimal {
+	String name;
+
+	DogAnimal(String n) {
+		name = n;
+	}
+}
+
+enum Pets {
+	CAT, HORSE
+};
+
+public class MapTest {
+	public static void main(String[] args) {
+		Map<Object, Object> m1 = new HashMap<Object, Object>();
+		m1.put("k1", new DogAnimal("Pinky"));
+		m1.put("k2", Pets.CAT);
+
+	}
+}

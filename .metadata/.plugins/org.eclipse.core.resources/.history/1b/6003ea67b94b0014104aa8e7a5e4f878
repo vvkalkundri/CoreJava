@@ -1,0 +1,17 @@
+package com.java.genericsandcollection;
+
+public class ListIterator {
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Dog {
+	String name;
+
+	Dog(String n) {
+		name = n;
+	}
+
+}

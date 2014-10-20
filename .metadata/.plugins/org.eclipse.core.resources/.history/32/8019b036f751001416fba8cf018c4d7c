@@ -1,0 +1,28 @@
+package com.java.test;
+
+public class funnyProductTest {
+
+	public static void main(String[] args) {
+		int size = 4;
+		int arr[] = { 1, 2, 3, 4 };
+		int[] result = funnyProduct(arr, size);
+		for (int i = 0; i < result.length; i++) {
+			System.out.println(result[i]);
+		}
+	}
+
+	static int[] funnyProduct(int arr[], int size) {
+		int[] temp = new int[size];
+
+		for (int i = 0; i < arr.length; i++) {
+			int tempProd = 1;
+			for (int j = 0; j < arr.length ; j++) {
+				if( j != i)
+					tempProd = tempProd * arr[i];
+			}
+			temp[i] = tempProd;
+		}
+		return temp;
+
+	}
+}

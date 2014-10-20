@@ -1,0 +1,30 @@
+package com.java.test;
+
+public class funnyProductTest {
+
+	public static void main(String[] args) {
+		 Bar b = new Bar("yahoo");
+		 
+		 
+		}
+	}
+
+	class Boo{
+		Boo() {
+			System.out.println( "This is the default constructor of the Boo class");
+		}
+		Boo(String s){
+			System.out.println("This is the 1 arguement constructor : " +s);
+		}
+	}
+	
+	class Bar extends Boo{
+		Bar(){
+			super();
+			System.out.println("Calling the Bar constructor");
+		}
+		Bar(String s){
+			super(s);
+			System.out.println("This is the 1 argument contructor of Bar : " +s);
+		}
+	}

@@ -1,0 +1,21 @@
+package com.java.innerclass;
+
+public class ArguementDefinedAnonInnerClass {
+	public static void main(String[] args) {
+
+	}
+}
+
+interface foo {
+	void fooF();
+}
+
+class Bar {
+	void doStuff(foo f) {
+	}
+}
+
+class BarImplementar {
+	Bar b1 = new Bar();
+
+}

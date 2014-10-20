@@ -1,0 +1,24 @@
+package com.java.serialization;
+
+import java.io.Serializable;
+
+public class TransientVariableTest {
+
+}
+
+class NameStore implements Serializable {
+	private String FirstName;
+	private transient String MiddleName;
+	private String LastName;
+
+	public NameStore(String Fname, String Mname, String Lname) {
+		this.FirstName = Fname;
+		this.MiddleName = Mname;
+		this.LastName = Lname;
+	}
+
+	public String toString() {
+		return ("First Name : " + this.FirstName + "  Middle Name : "
+				+ this.MiddleName + "  Last Name : " + this.LastName);
+	}
+}

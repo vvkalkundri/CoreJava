@@ -1,0 +1,5 @@
+package com.java.serialization;
+
+public class TransientVariableTest {
+
+}

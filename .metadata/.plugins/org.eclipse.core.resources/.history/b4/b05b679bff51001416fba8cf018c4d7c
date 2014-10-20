@@ -1,0 +1,17 @@
+package com.java.test;
+
+public abstract class funnyProductTest {
+	public int getNum() {
+		return 45;
+	}
+
+	public abstract class Bar {
+		public int getNum() {
+			return 38;
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

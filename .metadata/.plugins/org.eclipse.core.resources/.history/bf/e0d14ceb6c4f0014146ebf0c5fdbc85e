@@ -1,0 +1,30 @@
+  package com.java.exception;
+
+public class TryReturn {
+public static void main(String[] args) {
+	
+	
+	System.out.println(new A().sum());
+}
+}
+
+class A{
+	
+	public int sum(){
+		
+	
+	try{
+		
+		int a = 10/0;
+		System.out.println( "Exiting try block");
+		
+	}catch(Exception e){
+		System.out.println(" Inside catch block");
+
+	}
+	finally{
+		System.out.println(" I am in finally block");
+	}
+	return 20;
+	}
+}

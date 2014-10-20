@@ -1,0 +1,21 @@
+package com.java.genericsandcollection;
+
+import java.util.Arrays;
+
+public class CollectionBinarySearch {
+	public static void main(String[] args) {
+		String[] sa = { "one", "two", "three", "four" };
+		for (String string : sa)
+			System.out.print(string + " ");
+		System.out.println();
+		
+		
+		Arrays.sort(sa);
+		
+		for (String string : sa)
+			System.out.print(string + " ");
+		System.out.println();
+int pos = Arrays.binarySearch(sa, "awo");
+		System.out.println("Actual position will be " +(-(Arrays.binarySearch(sa, "awo")-1)));
+	}
+}

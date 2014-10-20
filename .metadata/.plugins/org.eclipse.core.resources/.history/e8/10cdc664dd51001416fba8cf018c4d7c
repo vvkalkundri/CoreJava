@@ -1,0 +1,19 @@
+package com.java.innerclass;
+
+public class InterfaceAndInnerClass {
+	public static void main(String[] args) {
+
+	}
+}
+
+interface Cookable {
+	public void cook();
+}
+
+class Food {
+	Cookable c = new Cookable() {
+		public void cook() {
+			System.out.println(" Anonymous cookable implementar");
+		}
+	};
+}

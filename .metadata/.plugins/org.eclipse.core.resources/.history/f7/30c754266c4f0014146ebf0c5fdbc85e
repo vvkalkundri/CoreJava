@@ -1,0 +1,21 @@
+  package com.java.exception;
+
+public class TryReturn {
+public static void main(String[] args) {
+	
+	
+	System.out.println(new A().sum());
+}
+}
+
+class A(){
+	try{
+		
+	}catch(Exception e){
+		
+	}
+	finally{
+		System.out.println(" I am in finally block");
+	}
+	
+}

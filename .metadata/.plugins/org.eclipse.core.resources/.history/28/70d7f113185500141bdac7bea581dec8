@@ -1,0 +1,15 @@
+package com.java.test;
+
+class manager {
+public static void main(String[] args) {
+	System.out.println("test");
+}
+}
+
+class B{
+	
+}
+
+class A{
+	
+}
