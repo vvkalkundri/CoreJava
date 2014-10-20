@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="com.java.genericsandcollection.DvdInfo"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -13,8 +12,6 @@
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
 <fullyQualifiedTypeName name="com.java.genericsandcollection.TreeTest"/>
 <fullyQualifiedTypeName name="com.java.genericsandcollection.AnimalDoctorGeneric"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.java.genericsandcollection.DogAnimal"/>
 <fullyQualifiedTypeName name="com.java.genericsandcollection.DogAnimalCheckUp"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -29,4 +26,16 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.java.threads.ThreadSafeClass"/>
+<fullyQualifiedTypeName name="nameDropper"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="com.java.threads.ThreadB"/>
+<fullyQualifiedTypeName name="com.java.threads.JoinThreadA"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.java.test.Salman"/>
 </qualifiedTypeNameHistroy>
