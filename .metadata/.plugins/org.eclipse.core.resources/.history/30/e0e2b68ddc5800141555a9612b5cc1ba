@@ -1,0 +1,17 @@
+package com.java.test;
+
+public class Salman{
+	
+}
+
+
+class A{
+	A(){
+		System.out.println(" Default A");
+	}
+	
+	A(int x,int y){
+		System.out.println("Overloaded A constructor");
+	}
+	
+}

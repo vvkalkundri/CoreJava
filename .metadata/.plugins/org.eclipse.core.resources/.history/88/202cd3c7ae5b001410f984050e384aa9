@@ -1,0 +1,17 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class JUnitTested {
+
+	private String message = "Hello Junit";
+	TestJUnit tj = new TestJUnit(message);
+
+	@Test
+	public void test() {
+		assertEquals(message, tj.PrintMessage());
+	}
+
+}

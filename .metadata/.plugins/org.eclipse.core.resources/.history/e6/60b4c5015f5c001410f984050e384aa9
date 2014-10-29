@@ -1,0 +1,48 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+
+import java.util.Collection;
+import java.util.HashMap;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.experimental.theories.ParametersSuppliedBy;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
+public class TestParamaterisation {
+	private int inputNumber;
+	private boolean expectedResult;
+	ClassPrimeNumber cpn;
+
+	// Constructor that takes arguments as the constructor before running the
+	public TestParamaterisation(int input, boolean result) {
+		this.inputNumber = input;
+		this.expectedResult = result;
+	}
+
+	@Parameterized.Parameters
+	public static Collection primeNumber() {
+		HashMap hm = new HashMap<Integer, Boolean>();
+		hm.put(2, true);
+		hm.put(10, false);
+		
+		return (Collection) hm;
+
+	}
+
+	@Before
+	public void intialize() {
+		cpn = new ClassPrimeNumber();
+	}
+
+	@Test
+	public void testPrimeNumber() {
+		System.out.println(" Input number is : " +inputNumber);
+		assertEquals(expectedResult, cpn.primeNumberChecker(inputNumber));
+	}
+
+}

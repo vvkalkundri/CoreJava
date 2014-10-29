@@ -1,0 +1,25 @@
+package com.java.test;
+
+public class Salman {
+public static void main(String[] args) {
+	B b1 = new B(30);
+}
+}
+
+class A {
+	A() {
+		System.out.println(" Default A");
+	}
+
+	A(int x, int y) {
+		System.out.println("Overloaded A constructor");
+	}
+
+}
+
+class B{
+	B(int z){
+		super(20,40);
+		System.out.println("This is overloaded B constructor");
+	}
+}

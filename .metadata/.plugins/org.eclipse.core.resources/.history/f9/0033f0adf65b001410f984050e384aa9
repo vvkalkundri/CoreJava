@@ -1,0 +1,57 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+import junit.framework.TestCase;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class JUnitTested extends TestCase {
+
+	private String message = "Hello Junit";
+	private double fvalue1;
+	private double fvalue2;
+
+	TestJUnit tj = new TestJUnit(message);
+
+	@Before
+	public void setup() {
+		fvalue1 = 10.0;
+		fvalue2 = 20.0;
+	}
+
+	// This is a sample test case
+	@Test
+	public void test() {
+		message = "Hello Junit";
+		assertEquals(message, tj.PrintMessage());
+	}
+
+	// This test case checks the assert behavious in JUnit
+	@Test
+	public void testAssertBehaviour() {
+		int num = 5;
+		String temp = null;
+		String str = " This is a test message";
+
+		assertEquals(str, new TestJUnit(str).PrintMessage());
+
+		assertFalse(num > 6);
+		assertNotNull(temp);
+	}
+
+	// This test case explores the various functions of test case class
+	@Test
+	public void testTestCase() {
+		
+		// Count the no of test cases
+		System.out.println("No of the test case is : " + this.countTestCases());
+		
+		// Get the name of the test case
+		System.out.println(this.getName());
+		
+		//Set name of the test case
+		this.setName("Renamed Test Case");
+		System.out.println("New Test Case name : " +this.getName());
+	}
+}

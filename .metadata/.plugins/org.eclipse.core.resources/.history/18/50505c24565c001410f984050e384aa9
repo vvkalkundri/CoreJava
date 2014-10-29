@@ -1,0 +1,11 @@
+package com.java.junit;
+
+public class ClassWithException {
+	
+	private String message;
+	
+	public ClassWithException(String message){
+		this.message = message;
+	}
+
+}

@@ -1,0 +1,117 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+import junit.framework.TestCase;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class JUnitTested extends TestCase {
+
+	private String message = "Hello Junit";
+	private double fvalue1;
+	private double fvalue2;
+
+	TestJUnit tj = new TestJUnit(message);
+
+	@BeforeClass
+	public void testbeforeClass() {
+		System.out.println(" To check the execution of the Before Class");
+	}
+
+	@Before
+	public void testbefore() {
+		System.out.println("Execure Before");
+	}
+
+	// This is used to initial setup
+	@Before
+	public void setup() {
+		fvalue1 = 10.0;
+		fvalue2 = 20.0;
+		System.out.println(" In Before ");
+	}
+
+	// This is a sample test case
+	@Test
+	public void test() {
+		message = "Hello Junit";
+		assertEquals(message, tj.PrintMessage());
+	}
+
+	// This test case checks the assert behavious in JUnit
+	@Test
+	public void testAssertBehaviour() {
+		int num = 5;
+		String temp = null;
+		String str = " This is a test message";
+
+		assertEquals(str, new TestJUnit(str).PrintMessage());
+
+		assertFalse(num > 6);
+		assertNull(temp);
+	}
+
+	// This test case explores the various functions of test case class
+	@Test
+	public void testTestCase() {
+
+		// Count the no of test cases
+		System.out.println("No of the test case is : " + this.countTestCases());
+
+		// Get the name of the test case
+		System.out.println(this.getName());
+
+		// Set name of the test case
+		this.setName("Renamed Test Case");
+		System.out.println("New Test Case name : " + this.getName());
+	}
+
+	@Test
+	public void testAssertions() {
+		String str1 = new String("abc");
+		String str2 = new String("abc");
+		String str3 = null;
+		String str4 = "abc";
+		String str5 = "abc";
+		int val1 = 5;
+		int val2 = 6;
+		String[] expectedArray = { "one", "two", "three" };
+		String[] actualArray = { "one", "two", "three" };
+		// Assert for the equality of the 2 strings
+		assertEquals(str1, str2);
+		// Assert for the true condition
+		assertTrue(val1 < val2);
+		// Assert for false condition
+		assertFalse(val1 > val2);
+		// assert if the obect is null
+		assertNull(str3);
+		// Assert if the object is not null
+		assertNotNull(str2);
+		// Assert the contents of the array
+		assertArrayEquals(expectedArray, actualArray);
+	}
+
+	// This used to do clean up activities
+	@After
+	public void testtearDown() {
+		// Write all the steps to perform clean up operation
+	}
+
+	@After
+	public void testafter() {
+
+		System.out.println("This is after method");
+		System.out.println("--------------");
+
+	}
+
+	@AfterClass
+	public void testafterclass() {
+		System.out.println("In after class");
+		System.out.println("--------------");
+	}
+}

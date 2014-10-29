@@ -1,0 +1,13 @@
+package com.java.test;
+
+public class Salman{
+	
+}
+
+
+class A{
+	A(){
+		System.out.println(" Default A");
+	}
+	
+}

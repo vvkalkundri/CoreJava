@@ -1,0 +1,25 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.experimental.theories.ParametersSuppliedBy;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+@RunWith(Parameterized.class)
+public class TestParamaterisation {
+	private int inputNumber;
+	private boolean expectedResult;
+
+	// Constructor that takes arguments as the constructor before running the
+	public TestParamaterisation(int Integer, boolean result) {
+
+	}
+
+	@Test
+	public void testPrimeNumber() {
+
+	}
+
+}

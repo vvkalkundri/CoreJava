@@ -1,0 +1,13 @@
+package com.java.junit;
+
+public class TestJUnit {
+	private String message;
+     public TestJUnit(String message){
+    	 this.message = message;
+     }
+     
+     public String PrintMessage(){
+    	 System.out.println(message);
+    	 return message;
+     }
+}

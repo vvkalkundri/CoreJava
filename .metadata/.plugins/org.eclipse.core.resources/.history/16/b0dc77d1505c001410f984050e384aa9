@@ -1,0 +1,39 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class TestAnnotations {
+	@BeforeClass
+	public void testbeforeClass() {
+		System.out.println(" To check the execution of the Before Class");
+	}
+
+	@Before
+	public void testbefore() {
+		System.out.println("Execure Before");
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+	@After
+	public void testafter() {
+
+		System.out.println("This is after method");
+		System.out.println("--------------");
+
+	}
+
+	@AfterClass
+	public void testafterclass() {
+		System.out.println("In after class");
+		System.out.println("--------------");
+	}
+}

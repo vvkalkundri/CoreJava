@@ -1,0 +1,49 @@
+package com.java.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class TestAnnotations {
+	@BeforeClass
+	public static void testbeforeClass() {
+		System.out.println(" To check the execution of the Before Class");
+		System.out.println("**************");
+	}
+
+	@Before
+	public void testbefore() {
+		System.out.println("This is before method");
+		System.out.println("**************");
+	}
+
+	@Test
+	public void test1() {
+
+		System.out.println("This is a test 1 method");
+	}
+
+	@Test
+	public void test2() {
+
+		System.out.println("This is a test 2 method");
+	}
+
+	@After
+	public void testafter() {
+
+		System.out.println("This is after method");
+		System.out.println("**************");
+
+	}
+
+	@AfterClass
+	public static void testafterclass() {
+		System.out.println(" To check the execution of the After Class");
+		System.out.println("**************");
+	}
+}
